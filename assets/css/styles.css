@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    z-index: 9999;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: calc(25px + .5vw);
+    background-color: hsl(54, 98%, 50%);
+    animation: colorChange 10s infinite;
+}
+
+/* Animation */
+@keyframes colorChange {
+    0%, 100% {background-color: #fce303;} 
+    25% {background-color: #FFDD00;}
+    50% {background-color: #FFD300;}
+    75% {background-color: #fdca31;}
+}
+
+@keyframes extend {
+    0% {
+        text-shadow: 
+    -1px 1px 0px #00a5e6,
+    -5px 5px 0px #017bcc,
+    -10px 10px 0px #00a7bd;
+    }
+    15% {
+        text-shadow: 
+    -2px 2px 0px #00a5e6,
+    -10px 10px 0px #c501cc,
+    -20px 20px 0px #aabd00;
+    }
+    30% {
+        text-shadow: 
+    -4px 4px 0px #9d00e6,
+    -15px 15px 0px #017bcc,
+    -22px 22px 0px #00bd19;
+    }
+    45% {
+        text-shadow: 
+    -8px 8px 0px #00a5e6,
+    -20px 20px 0px #cc4101,
+    -25px 25px 0px #bd0000;
+    }
+    50% {
+        transform: rotateZ(2deg);
+        transform: rotateZ(-2deg);
+    }
+    60% {
+        transform: rotateZ(2deg);
+        transform: rotateZ(-2deg);
+    }
+}
+
+.front-container {
+    height: 15vh;
+    color: white;
+}
+
+.front {
+    margin: 5% 15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8%;
+    box-sizing: border-box;
+    font-size: calc(50px + 3vw);
+    letter-spacing: -2.4px;
+}
+
+.fnt {
+    animation: extend 6s infinite ease-in-out alternate-reverse;
+}
+
+
+.fnt-1 {
+    text-align: left;
+    position: relative;
+    left: -0.90em;
+}
+
+.fnt-2 {
+    text-align: center;
+    position: relative;
+    left: 2.5em;
+}
+
+.fnt-3 {
+    text-align: right;
+    position: relative;
+    right: -4.8em;
+}
+
+.middle {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 90% 10%;
+}
+
+.md-2 {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 130% 10%;
+}
+
+.md-3 {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 200% 10%;
+}
