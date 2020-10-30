@@ -21,24 +21,24 @@ body {
     75% {background-color: #fdca31;}
 }
 
-@keyframes extend {
+/* @keyframes extend {
     0% {
         text-shadow: 
-    -1px 1px 0px #00a5e6,
+    -1px 1px 15px #00a5e6,
     -5px 5px 0px #017bcc,
-    -10px 10px 0px #00a7bd;
+    -10px 10px 15px #00a7bd;
     }
     15% {
         text-shadow: 
-    -2px 2px 0px #00a5e6,
+    -2px 2px 10px #00a5e6,
     -10px 10px 0px #c501cc,
-    -20px 20px 0px #aabd00;
+    -20px 20px 10px #aabd00;
     }
     30% {
         text-shadow: 
-    -4px 4px 0px #9d00e6,
+    -4px 4px 20px #9d00e6,
     -15px 15px 0px #017bcc,
-    -22px 22px 0px #00bd19;
+    -22px 22px 20px #00bd19;
     }
     45% {
         text-shadow: 
@@ -47,14 +47,26 @@ body {
     -25px 25px 0px #bd0000;
     }
     50% {
-        transform: rotateZ(2deg);
+        transform: rotateZ(5deg);
         transform: rotateZ(-2deg);
     }
     60% {
         transform: rotateZ(2deg);
         transform: rotateZ(-2deg);
     }
-}
+    70% {
+        text-shadow: 
+    -10px 10px 0px #00a5e6,
+    -25px 25px 0px #01cca0,
+    -28px 28px 0px #8bbd00;
+    }
+    80% {
+        text-shadow: 
+    -8px 8px 25px #000000,
+    -20px 20px 0px #12cc01,
+    -30px 30px 25px #3200bd;
+    }
+} */
 
 .front-container {
     height: 15vh;
@@ -70,30 +82,33 @@ body {
     padding: 8%;
     box-sizing: border-box;
     font-size: calc(50px + 3vw);
-    letter-spacing: -2.4px;
+    letter-spacing: -2.1px;
 }
 
-.fnt {
+ /* .fnt {
     animation: extend 6s infinite ease-in-out alternate-reverse;
-}
+}  */
 
 
 .fnt-1 {
     text-align: left;
     position: relative;
     left: -0.90em;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 1));
 }
 
 .fnt-2 {
     text-align: center;
     position: relative;
     left: 2.5em;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 1));
 }
 
 .fnt-3 {
     text-align: right;
     position: relative;
     right: -4.8em;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 1));
 }
 
 .middle {
@@ -116,4 +131,10 @@ body {
     display: flex;
     flex-wrap: nowrap;
     margin: 200% 10%;
+}
+
+.txt-container {
+    border-top: 2px dashed black;
+    padding: 2%;
+    margin: 80vh 5% 0 5%;
 }
