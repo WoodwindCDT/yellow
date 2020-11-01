@@ -138,3 +138,9 @@ body {
     padding: 2%;
     margin: 80vh 5% 0 5%;
 }
+
+.txt-container-1 {
+    border-top: 2px dashed black;
+    padding: 2%;
+    margin: 5%;
+}

@@ -17,16 +17,16 @@ anime.timeline()
 
 anime.timeline()
   .add({
-    targets: '.fnt-2',
-    translateY: [100,0],
-    translateZ: 0,
-    opacity: [0,1],
-    scale: [1.5, 1],
-    rotateZ: [-180],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 400 + 30 * i
-});
+      targets: '.fnt-2',
+      scale: [1.5, 1],
+      opacity: [0,1],
+      delay: (el, i) => 400 + 30 * i
+}).add({
+  targets: '.fnt-2',
+  rotateZ: [-5],
+    translateY: 8,
+    translateZ: 1,
+})
 
 anime.timeline()
   .add({
